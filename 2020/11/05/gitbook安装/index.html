@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>gitbook安装 | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="###通过NPM安装安装 GitBook 的最好办法是通过 NPM。在终端提示符下，只需运行以下命令即可安装 GitBook： 1npm install gitbook-cli -g gitbook-cli是 GitBook 的一个命令行工具。它将自动安装所需版本的 GitBook 来构建一本书.执行下面的命令，查看 GitBook 版本，以验证安装成功。 1gitbook -V ###初始化Gi">
+<meta property="og:type" content="article">
+<meta property="og:title" content="gitbook安装">
+<meta property="og:url" content="http://example.com/2020/11/05/gitbook%E5%AE%89%E8%A3%85/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="###通过NPM安装安装 GitBook 的最好办法是通过 NPM。在终端提示符下，只需运行以下命令即可安装 GitBook： 1npm install gitbook-cli -g gitbook-cli是 GitBook 的一个命令行工具。它将自动安装所需版本的 GitBook 来构建一本书.执行下面的命令，查看 GitBook 版本，以验证安装成功。 1gitbook -V ###初始化Gi">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-11-05T07:20:34.000Z">
+<meta property="article:modified_time" content="2020-11-10T05:58:21.442Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 5.2.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-gitbook安装" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/11/05/gitbook%E5%AE%89%E8%A3%85/" class="article-date">
+  <time datetime="2020-11-05T07:20:34.000Z" itemprop="datePublished">2020-11-05</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      gitbook安装
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>###通过NPM安装<br>安装 GitBook 的最好办法是通过 NPM。在终端提示符下，只需运行以下命令即可安装 GitBook：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install gitbook-cli -g</span><br></pre></td></tr></table></figure>
+<p>gitbook-cli是 GitBook 的一个命令行工具。它将自动安装所需版本的 GitBook 来构建一本书.<br>执行下面的命令，查看 GitBook 版本，以验证安装成功。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gitbook -V</span><br></pre></td></tr></table></figure>
+<p>###初始化<br>GitBook可以设置一个样板书：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gitbook init <span class="comment">// 安装时间有时候比较长 请耐心等待</span></span><br></pre></td></tr></table></figure>
+<p>如果您希望将书籍创建到一个新目录中，可以通过运行 gitbook init ./directory 这样做</p>
+<p>###构建<br>使用下面的命令，会在项目的目录下生成一个 _book 目录，里面的内容为静态站点的资源文件：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gitbook build</span><br></pre></td></tr></table></figure>
+
+<p>###Debugging<br>您可以使用选项 –log=debug 和 –debug 来获取更好的错误消息（使用堆栈跟踪）。例如：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gitbook build ./ --log=debug --debug</span><br></pre></td></tr></table></figure>
+
+<p>###启动服务<br>使用下列命令会运行一个 web 服务, 通过 <a target="_blank" rel="noopener" href="http://localhost:4000/">http://localhost:4000/</a> 可以预览书籍</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gitbook serve</span><br></pre></td></tr></table></figure>
+
+<p>###GitBook 命令<br>列出 gitbook 所有的命令</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gitbook help</span><br></pre></td></tr></table></figure>
+
+<p>生成静态网页</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gitbook build</span><br></pre></td></tr></table></figure>
+
+<p>生成静态网页并运行服务器</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gitbook serve</span><br></pre></td></tr></table></figure>
+
+<p>生成时指定gitbook的版本, 本地没有会先下载</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gitbook build --gitbook=<span class="number">2.0</span><span class="number">.1</span></span><br></pre></td></tr></table></figure>
+
+<p>列出本地所有的gitbook版本</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gitbook ls</span><br></pre></td></tr></table></figure>
+
+<p>列出远程可用的gitbook版本</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gitbook ls-remote</span><br></pre></td></tr></table></figure>
+
+<p>安装对应的gitbook版本</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gitbook fetch 标签/版本号</span><br></pre></td></tr></table></figure>
+
+<p>更新到gitbook的最新版本</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gitbook update</span><br></pre></td></tr></table></figure>
+
+<p>卸载对应的gitbook版本</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gitbook uninstall <span class="number">2.0</span><span class="number">.1</span></span><br></pre></td></tr></table></figure>
+
+<p>指定log的级别</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gitbook build --log=debug</span><br></pre></td></tr></table></figure>
+
+<p>输出错误信息</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gitbook builid --debug</span><br></pre></td></tr></table></figure>
+
+<p>###官方资源<br><a href="%22https://www.jianshu.com/p/191d1e21f7ed%22">Markdown基本语法</a><br><a href="%22https://github.com/GitbookIO/gitbook%22">Gitbook Github</a></p>
+<p><a href="%22https://www.gitbook.com%22">Gitbook 官网</a></p>
+<p><a href="%22https://toolchain.gitbook.com/%22">Gitbook Toolchain 文档</a></p>
+<p><a href="%22https://docs.gitbook.com/%22">Gitbook 帮助中心</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2020/11/05/gitbook%E5%AE%89%E8%A3%85/" data-id="ckhbkdiza00042gdo4rge166w" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2020/11/05/Mysql%E7%9A%84%E5%AD%98%E5%82%A8%E5%BC%95%E6%93%8E/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          Mysql的存储引擎
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2020/11/05/%E7%A7%81%E6%9C%89npm%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">私有npm搭建教程</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/11/">November 2020</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2020/11/10/Centos7.4Gitlab%E6%90%AD%E5%BB%BA/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2020/11/10/sss/">sss</a>
+          </li>
+        
+          <li>
+            <a href="/2020/11/10/hello-world/">Hello World</a>
+          </li>
+        
+          <li>
+            <a href="/2020/11/06/gitlab%E9%85%8D%E7%BD%AE%E5%9F%9F%E5%90%8D%E8%AE%BF%E9%97%AE/">gitlab配置域名访问</a>
+          </li>
+        
+          <li>
+            <a href="/2020/11/05/Mysql%E4%BA%8B%E5%8A%A1%E7%9A%84%E5%9B%9B%E5%A4%A7%E7%89%B9%E6%80%A7/">Mysql事务的四大特性</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2020 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+  </div>
+</body>
+</html>
