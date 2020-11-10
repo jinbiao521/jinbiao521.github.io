@@ -90,26 +90,6 @@
   </entry>
   
   <entry>
-    <title>Mysql事务的四大特性</title>
-    <link href="http://example.com/2020/11/05/Mysql%E4%BA%8B%E5%8A%A1%E7%9A%84%E5%9B%9B%E5%A4%A7%E7%89%B9%E6%80%A7/"/>
-    <id>http://example.com/2020/11/05/Mysql%E4%BA%8B%E5%8A%A1%E7%9A%84%E5%9B%9B%E5%A4%A7%E7%89%B9%E6%80%A7/</id>
-    <published>2020-11-05T07:20:34.000Z</published>
-    <updated>2020-11-10T05:58:21.503Z</updated>
-    
-    <content type="html"><![CDATA[<h3 id="简介-事务的四大特性ACID"><a href="#简介-事务的四大特性ACID" class="headerlink" title="简介 事务的四大特性ACID"></a>简介 事务的四大特性ACID</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">* 原子性Atomicity：</span><br><span class="line">        一个事务必须被事务不可分割的最小工作单元，整个操作要么全部成功，要么全部失败，一般就是通过commit和rollback来控制</span><br><span class="line">* 一致性Consistency:</span><br><span class="line">        数据库总能从一个一致性的状态转换到另一个一致性的状态，比如小滴课堂下单支付成功后，开通视频播放权限，只要有任何一方发生异常就不会成功提交事务</span><br><span class="line">* 隔离性Isolation:</span><br><span class="line">        一个事务相对于另一个事务是隔离的，一个事务所做的修改是在最终提交以前，对其他事务是不可见的       </span><br><span class="line">* 持久性Durability:</span><br><span class="line">        一旦事务提交，则其所做的修改就会永久保存到数据库中。此时即使系统崩溃，修改的数据也不会丢失</span><br></pre></td></tr></table></figure>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h3 id=&quot;简介-事务的四大特性ACID&quot;&gt;&lt;a href=&quot;#简介-事务的四大特性ACID&quot; class=&quot;headerlink&quot; title=&quot;简介 事务的四大特性ACID&quot;&gt;&lt;/a&gt;简介 事务的四大特性ACID&lt;/h3&gt;&lt;figure class=&quot;highlight </summary>
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
     <title>Mysql数据库索引</title>
     <link href="http://example.com/2020/11/05/Mysql%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B4%A2%E5%BC%95/"/>
     <id>http://example.com/2020/11/05/Mysql%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B4%A2%E5%BC%95/</id>
@@ -130,6 +110,26 @@
     &lt;tr&gt;
         &lt;td&gt;普通索引&lt;/td&gt;
         &lt;td&gt;最基本的索</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Mysql事务的四大特性</title>
+    <link href="http://example.com/2020/11/05/Mysql%E4%BA%8B%E5%8A%A1%E7%9A%84%E5%9B%9B%E5%A4%A7%E7%89%B9%E6%80%A7/"/>
+    <id>http://example.com/2020/11/05/Mysql%E4%BA%8B%E5%8A%A1%E7%9A%84%E5%9B%9B%E5%A4%A7%E7%89%B9%E6%80%A7/</id>
+    <published>2020-11-05T07:20:34.000Z</published>
+    <updated>2020-11-10T05:58:21.503Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="简介-事务的四大特性ACID"><a href="#简介-事务的四大特性ACID" class="headerlink" title="简介 事务的四大特性ACID"></a>简介 事务的四大特性ACID</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">* 原子性Atomicity：</span><br><span class="line">        一个事务必须被事务不可分割的最小工作单元，整个操作要么全部成功，要么全部失败，一般就是通过commit和rollback来控制</span><br><span class="line">* 一致性Consistency:</span><br><span class="line">        数据库总能从一个一致性的状态转换到另一个一致性的状态，比如小滴课堂下单支付成功后，开通视频播放权限，只要有任何一方发生异常就不会成功提交事务</span><br><span class="line">* 隔离性Isolation:</span><br><span class="line">        一个事务相对于另一个事务是隔离的，一个事务所做的修改是在最终提交以前，对其他事务是不可见的       </span><br><span class="line">* 持久性Durability:</span><br><span class="line">        一旦事务提交，则其所做的修改就会永久保存到数据库中。此时即使系统崩溃，修改的数据也不会丢失</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h3 id=&quot;简介-事务的四大特性ACID&quot;&gt;&lt;a href=&quot;#简介-事务的四大特性ACID&quot; class=&quot;headerlink&quot; title=&quot;简介 事务的四大特性ACID&quot;&gt;&lt;/a&gt;简介 事务的四大特性ACID&lt;/h3&gt;&lt;figure class=&quot;highlight </summary>
       
     
     
